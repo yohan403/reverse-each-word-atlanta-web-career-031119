@@ -9,12 +9,12 @@ def reverse_each_word(string)
 end
 
 
-def reverse_each_word(string)
-  array = string.split
-  array.collect do |i|
-    i.reverse
-  end
-  array.join.rstrip
-end
+# def reverse_each_word(string)
+#   array = string.split
+#   array.collect do |i|
+#     i.reverse
+#   end
+#   array.join.rstrip
+# end
 
 # reverse_each_word("Hello there, and how are you?")
