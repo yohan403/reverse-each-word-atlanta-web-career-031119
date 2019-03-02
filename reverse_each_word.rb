@@ -5,7 +5,7 @@ def reverse_each_word(string)
     new_array << i.reverse
     new_array << " "
   end
-  new_array.join
+  new_array.join.chomp
 end
 
 # reverse_each_word("Hello there, and how are you?")
