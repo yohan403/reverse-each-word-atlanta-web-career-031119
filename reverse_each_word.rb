@@ -1,20 +1,20 @@
-def reverse_each_word(string)
-  array = string.split
-  new_array = []
-  array.each do |i|
-    new_array << i.reverse
-    new_array << " "
-  end
-  new_array.join.rstrip
-end
-
-
 # def reverse_each_word(string)
 #   array = string.split
-#   array.collect do |i|
-#     i.reverse
+#   new_array = []
+#   array.each do |i|
+#     new_array << i.reverse
+#     new_array << " "
 #   end
-#   array.join.rstrip
+#   new_array.join.rstrip
 # end
+
+
+def reverse_each_word(string)
+  array = string.split
+  array.collect do |i|
+    i.reverse
+  end
+  array.join.rstrip
+end
 
 # reverse_each_word("Hello there, and how are you?")
