@@ -8,4 +8,14 @@ def reverse_each_word(string)
   new_array.join.rstrip
 end
 
+
+def reverse_each_word(string)
+  array = string.split
+  array.collect do |i|
+    array << i.reverse
+    array << " "
+  end
+  array.join.rstrip
+end
+
 # reverse_each_word("Hello there, and how are you?")
